@@ -8,3 +8,7 @@ If you don't have <b>nodemon</b> installed:
 ```
 $ npm install -g nodemon
 ```
+Or just type:
+```
+$ node index
+```
