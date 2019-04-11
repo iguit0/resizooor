@@ -1,7 +1,7 @@
-# cadastra-car-api
+# Cadastra Car API :red_car::wrench:
 ```
 $ git clone https://github.com/iguit0/cadastra-car-api.git
-$ npm install
+$ npm i
 $ nodemon index
 ```
 If you don't have <b>nodemon</b> installed:
