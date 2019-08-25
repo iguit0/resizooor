@@ -58,5 +58,5 @@ app.use(function(err,req,res,next){
 require('./app/routes/vehicle.routes')(app);
 
 app.listen(3000, function(){
-    console.log("Server is listening on port 3000");
+    console.log("Server is listening on port 3000 🚀");
 });
