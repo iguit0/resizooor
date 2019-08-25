@@ -1,8 +1,14 @@
 {
   "name": "cadastra-car-api",
-  "version": "1.0.0",
-  "description": "<h1 align=\"center\"> Cadastra Car API :red_car::wrench:</h1>",
+  "version": "0.0.1",
+    "author": {
+      "name": "Igor Alves",
+      "email": "igorsk89@gmail.com",
+      "url": "https://github.com/iguit0"
+    }
+  "description": "An expressjs project",
   "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,13 +16,20 @@
     "type": "git",
     "url": "git+https://github.com/iguit0/cadastra-car-api.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "study-project",
+    "expressjs"
+  ],
+  
+  "license": "Apache",
   "bugs": {
     "url": "https://github.com/iguit0/cadastra-car-api/issues"
   },
   "homepage": "https://github.com/iguit0/cadastra-car-api#readme",
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
