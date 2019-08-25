@@ -1,4 +1,4 @@
-<h1 align="center"> Cadastra Car :car::blue_car:</h1>
+<h1 align="center">Cadastra Car :blue_car:</h1>
 
 ### Table of Contents
 
