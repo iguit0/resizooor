@@ -1,11 +1,11 @@
 {
   "name": "cadastra-car-api",
   "version": "0.0.1",
-    "author": {
-      "name": "Igor Alves",
-      "email": "igorsk89@gmail.com",
-      "url": "https://github.com/iguit0"
-    }
+  "author": {
+    "name": "Igor Alves",
+    "email": "igorsk89@gmail.com",
+    "url": "https://github.com/iguit0"
+  },
   "description": "An expressjs project",
   "main": "index.js",
   "private": true,
@@ -20,7 +20,6 @@
     "study-project",
     "expressjs"
   ],
-  
   "license": "Apache",
   "bugs": {
     "url": "https://github.com/iguit0/cadastra-car-api/issues"

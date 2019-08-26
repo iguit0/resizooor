@@ -1,62 +1,69 @@
-var express = require('express');
-var bodyParser = require('body-parser');
+var express = require("express");
+var bodyParser = require("body-parser");
 
 // create express app
 var app = express();
 
 // Add headers
-app.use(function (req, res, next) {
+app.use(function(req, res, next) {
+  // Website you wish to allow to connect
+  res.setHeader("Access-Control-Allow-Origin", "*");
 
-    // Website you wish to allow to connect
-    res.setHeader('Access-Control-Allow-Origin', '*');
+  // Request methods you wish to allow
+  res.setHeader(
+    "Access-Control-Allow-Methods",
+    "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+  );
 
-    // Request methods you wish to allow
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+  // Request headers you wish to allow
+  res.setHeader(
+    "Access-Control-Allow-Headers",
+    "X-Requested-With,content-type"
+  );
 
-    // Request headers you wish to allow
-    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+  // Set to true if you need the website to include cookies in the requests sent
+  // to the API (e.g. in case you use sessions)
+  res.setHeader("Access-Control-Allow-Credentials", true);
 
-    // Set to true if you need the website to include cookies in the requests sent
-    // to the API (e.g. in case you use sessions)
-    res.setHeader('Access-Control-Allow-Credentials', true);
-
-    // Pass to next layer of middleware
-    next();
+  // Pass to next layer of middleware
+  next();
 });
 
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // Configuring the database
-var dbConfig = require('./config/database.config');
-var mongoose = require('mongoose');
+var dbConfig = require("./config/database.config");
+var mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
 
-mongoose.connect(dbConfig.url)
+mongoose.set("useNewUrlParser", true);
 
-mongoose.connection.on('error', function(){
-    console.log('Could not connect to the database. Exiting now...');
-    process.exit();
-})
+mongoose.connect(dbConfig.url);
 
-mongoose.connection.once('open', function() {
-    console.log("Successfully connected to the database!");
-})
+mongoose.connection.on("error", function() {
+  console.log("Could not connect to the database. Exiting now...");
+  process.exit();
+});
 
-app.use(bodyParser.urlencoded({ extended: true}))
+mongoose.connection.once("open", function() {
+  console.log("\nSuccessfully connected to the database ✅");
+});
 
-app.get('/', function(req, res){
-    res.json({"message": "Welcome to Cadastra Car"});
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.get("/", function(req, res) {
+  res.json({ message: "Welcome to Cadastra Car" });
 });
 
 //error handling middleware
-app.use(function(err,req,res,next){
-    res.status(422).send({error: err.message});
+app.use(function(err, req, res, next) {
+  res.status(422).send({ error: err.message });
 });
 
 // Require Vehicle routes
-require('./app/routes/vehicle.routes')(app);
+require("./app/routes/vehicle.routes")(app);
 
-app.listen(3000, function(){
-    console.log("Server is listening on port 3000 🚀");
+app.listen(3000, function() {
+  console.log("\nServer is listening on port 3000 🚀");
 });
