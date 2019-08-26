@@ -1,12 +1,12 @@
 <h1 align="center">Cadastra Car :blue_car:</h1>
 
-### Table of Contents
+### Table of Contents :pushpin:
 
-- [Table of Contents](#table-of-contents)
 - [Quick start](#quick-start)
+- [To Do](#to-do)
 - [License](#license)
 
-### Quick start
+### Quick start :computer:
 
 ```sh
 $ git clone https://github.com/iguit0/cadastra-car-api.git
@@ -28,6 +28,12 @@ Or if you don't want to install, just type:
 $ node index
 ```
 
-### License
+### To Do :memo:
+
+- [x] Backend (Express)
+- [ ] Frontend (React)
+- [ ] Docker
+
+### License :scroll:
 
 This project is licensed under the [Apache License 2.0](LICENSE.md)
