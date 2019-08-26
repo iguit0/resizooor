@@ -1,11 +1,5 @@
 <h1 align="center">Cadastra Car :blue_car:</h1>
 
-### Table of Contents :pushpin:
-
-- [Quick start](#quick-start)
-- [To Do](#to-do)
-- [License](#license)
-
 ### Quick start :computer:
 
 ```sh
