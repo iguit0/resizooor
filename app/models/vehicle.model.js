@@ -1,12 +1,27 @@
-var mongoose = require("mongoose");
+const mongoose = require("mongoose");
 
-var VehicleSchema = mongoose.Schema(
+const VehicleSchema = mongoose.Schema(
   {
-    brand: String,
-    model: String,
-    color: String,
-    year: Number,
-    price: Number,
+    brand: {
+      type: String,
+      required: true
+    },
+    model: {
+      String,
+      required: true
+    },
+    color: {
+      type: String,
+      required: true
+    },
+    year: {
+      type: Number,
+      required: true
+    },
+    price: {
+      type: Number,
+      required: true
+    },
     description: String
   },
   {
