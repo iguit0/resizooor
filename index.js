@@ -64,6 +64,6 @@ app.use(function(err, req, res, next) {
 // Require Vehicle routes
 require("./app/routes/vehicle.routes")(app);
 
-app.listen(3000, function() {
-  console.log("\nServer is listening on port 3000 🚀");
+app.listen(4000, function() {
+  console.log("\nServer is listening on port 4000 🚀");
 });
