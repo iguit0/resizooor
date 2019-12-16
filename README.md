@@ -25,9 +25,7 @@ $ node index
 ### To Do :memo:
 
 - [x] Backend (Express)
-    - [ ] Add Authentication (JWT Token)
-- [ ] Frontend (React)
-- [ ] Docker
+- [ ] Frontend
 
 ### License :scroll:
 
