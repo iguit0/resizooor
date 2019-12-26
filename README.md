@@ -22,11 +22,6 @@ Or if you don't want to install, just type:
 $ node index
 ```
 
-### To Do :memo:
-
-- [x] Backend (Express)
-- [ ] Frontend
-
 ### License :scroll:
 
 This project is licensed under the [Apache License 2.0](LICENSE.md)
