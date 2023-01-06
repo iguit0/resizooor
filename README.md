@@ -21,6 +21,8 @@ An REST API that receives an image and uses a queuing system to change its size 
 
 ## :rocket: Tech
 
+- [Docker](https://docs.docker.com/get-docker/)
+  - [Docker-compose](https://docs.docker.com/engine/reference/commandline/compose/)
 - [FastAPI](https://fastapi.tiangolo.com/)
 - [Celery](https://docs.celeryq.dev/en/stable/)
 - [RabbitMQ](https://www.rabbitmq.com/)
@@ -36,5 +38,15 @@ An REST API that receives an image and uses a queuing system to change its size 
     git clone https://github.com/iguit0/resizooor.git
 
     cd resizooor
+    
+    docker-compose up
 ```
+
+Using [Postman](https://www.postman.com/):
+    
+-  Set up a POST request with the following URL: http://127.0.0.1:8000/images/resize
+   - Body: `form-data`
+     - Key: `image_file`
+     - After that, select `color_bars.png` (example image to test the solution)
+- After send the request, the result will appear as body result and after that just save response which is going to be a file.
 
