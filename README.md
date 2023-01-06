@@ -46,3 +46,4 @@ Using [Postman](https://www.postman.com/):
      - After that, select `color_bars.png` (example image to test the solution)
 - After send the request, the result will appear as body result and after that just save response which is going to be a file.
 
+:video_camera: Watch [demo video](https://drive.google.com/file/d/13LbgMFnuUhzWWnspFRKne866xI6gSGXK/view?usp=share_link).
