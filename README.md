@@ -6,7 +6,7 @@
   <a href="#computer-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#rocket-tech">Tech</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#gear-get-started">Get Started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="https://drive.google.com/file/d/13LbgMFnuUhzWWnspFRKne866xI6gSGXK/view?usp=share_link">Demo</a>&nbsp;&nbsp;&nbsp;
+  <a href="https://drive.google.com/file/d/13LbgMFnuUhzWWnspFRKne866xI6gSGXK/view?usp=share_link" target="_blank" rel="noopener noreferrer">Demo</a>&nbsp;&nbsp;&nbsp;
 </p>
 
 <br/>
