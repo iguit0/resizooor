@@ -1,5 +1,5 @@
 <h1 align="center">
-   :snake: Resizooor :snake:
+   :straight_ruler: Resizooor :straight_ruler:
 </h1>
 
 <p align="center">
@@ -15,7 +15,7 @@
 <br/>
 
 ## :computer: Project
-Receives an image and uses a queuing system to change its size to 384x384.
+An REST API that receives an image and uses a queuing system to change its size to 384x384.
 
 <br/>
 
