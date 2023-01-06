@@ -1,0 +1,30 @@
+version: '3.9'
+
+services:
+  redis:
+    image: redis:7.0
+
+  rabbitmq:
+    image: rabbitmq:3.11
+
+  app:
+    container_name: web
+    build: .
+    working_dir: /code
+    command: uvicorn app:app --host 0.0.0.0 --reload
+    environment:
+      DEBUG: 1
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+    restart: on-failure
+
+  worker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: 'celery -A resizor worker --loglevel=INFO'
+    depends_on:
+      - rabbitmq
+      - redis
