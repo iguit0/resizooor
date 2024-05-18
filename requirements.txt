@@ -11,7 +11,7 @@ click-repl==0.2.0
 exceptiongroup==1.1.0
 fastapi==0.109.1
 h11==0.14.0
-idna==3.4
+idna==3.7
 iniconfig==1.1.1
 kombu==5.2.4
 packaging==22.0
